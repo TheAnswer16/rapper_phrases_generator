@@ -19,7 +19,7 @@ import (
 
 		// Create the connection string
 		connStr := fmt.Sprintf("host=%s port=%s dbname=%s user=%s password=%s sslmode=disable", dbHost, dbPort, dbName, dbUser, dbPassword)
-		fmt.Println(connStr)
+
 		db, err := sql.Open("postgres", connStr)
 		if err != nil {
 			return nil, err
